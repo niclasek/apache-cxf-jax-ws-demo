@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file contains a Spring bean configuration -->
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:jaxws="http://cxf.apache.org/jaxws"
+        xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+
+		<!-- Will load CXF beans for management by Spring, enabling CXF to be used for web service -->
+        <import resource="classpath:META-INF/cxf/cxf.xml" />
+
+		<!-- The Spring configuration for the JAX-WS endpoint. -->
+        <jaxws:endpoint 
+          id="helloWorld" 
+          implementor="com.pluralsight.cxfdemo.HelloWorldImpl" 
+          address="/HelloWorld" />
+          
+</beans>
