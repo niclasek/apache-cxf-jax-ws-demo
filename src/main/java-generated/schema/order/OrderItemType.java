@@ -1,5 +1,5 @@
 
-package com.pluralsight.schema.order;
+package schema.order;
 
 import java.math.BigDecimal;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -22,7 +22,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *       &lt;sequence&gt;
  *         &lt;element name="lineNumber" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="expectedShippingDate" type="{http://www.w3.org/2001/XMLSchema}date" minOccurs="0"/&gt;
- *         &lt;element name="book" type="{http://www.pluralsight.com/schema/Order}BookType"/&gt;
+ *         &lt;element name="book" type="{schema/order}BookType"/&gt;
  *         &lt;element name="price" type="{http://www.w3.org/2001/XMLSchema}decimal"/&gt;
  *         &lt;element name="quantityShipped" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;

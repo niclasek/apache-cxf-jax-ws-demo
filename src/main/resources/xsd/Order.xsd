@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	targetNamespace="http://www.pluralsight.com/schema/Order" xmlns:tns="http://www.pluralsight.com/schema/Order"
+	targetNamespace="schema/order" xmlns:tns="schema/order"
 	elementFormDefault="qualified">
 
 	<!-- The global element for orderInquiry -->

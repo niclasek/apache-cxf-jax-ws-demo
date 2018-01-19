@@ -1,5 +1,5 @@
 
-package com.pluralsight.schema.order;
+package schema.order;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlType;

@@ -1,5 +1,5 @@
 
-package com.pluralsight.schema.order;
+package schema.order;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
@@ -10,7 +10,7 @@ import javax.xml.namespace.QName;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the com.pluralsight.schema.order package. 
+ * generated in the schema.order package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -24,11 +24,11 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _OrderInquiry_QNAME = new QName("http://www.pluralsight.com/schema/Order", "orderInquiry");
-    private final static QName _OrderInquiryResponse_QNAME = new QName("http://www.pluralsight.com/schema/Order", "orderInquiryResponse");
+    private final static QName _OrderInquiry_QNAME = new QName("schema/order", "orderInquiry");
+    private final static QName _OrderInquiryResponse_QNAME = new QName("schema/order", "orderInquiryResponse");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.pluralsight.schema.order
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: schema.order
      * 
      */
     public ObjectFactory() {
@@ -86,7 +86,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link OrderInquiryType }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.pluralsight.com/schema/Order", name = "orderInquiry")
+    @XmlElementDecl(namespace = "schema/order", name = "orderInquiry")
     public JAXBElement<OrderInquiryType> createOrderInquiry(OrderInquiryType value) {
         return new JAXBElement<OrderInquiryType>(_OrderInquiry_QNAME, OrderInquiryType.class, null, value);
     }
@@ -95,7 +95,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link OrderInquiryResponseType }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.pluralsight.com/schema/Order", name = "orderInquiryResponse")
+    @XmlElementDecl(namespace = "schema/order", name = "orderInquiryResponse")
     public JAXBElement<OrderInquiryResponseType> createOrderInquiryResponse(OrderInquiryResponseType value) {
         return new JAXBElement<OrderInquiryResponseType>(_OrderInquiryResponse_QNAME, OrderInquiryResponseType.class, null, value);
     }

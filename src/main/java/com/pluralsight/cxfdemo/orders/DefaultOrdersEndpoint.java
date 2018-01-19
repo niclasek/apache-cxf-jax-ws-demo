@@ -2,16 +2,16 @@ package com.pluralsight.cxfdemo.orders;
 
 import javax.jws.WebService;
 
-import com.pluralsight.schema.order.AccountType;
-import com.pluralsight.schema.order.ObjectFactory;
-import com.pluralsight.schema.order.OrderInquiryResponseType;
-import com.pluralsight.schema.order.OrderInquiryType;
-import com.pluralsight.service.orders.Orders;
+import schema.order.AccountType;
+import schema.order.ObjectFactory;
+import schema.order.OrderInquiryResponseType;
+import schema.order.OrderInquiryType;
+import service.orders.Orders;
 
-@WebService(portName="OrdersSOAP", serviceName="Orders", endpointInterface="com.pluralsight.service.orders.Orders", 
-targetNamespace="http://www.pluralsight.com/service/Orders/")
+@WebService(portName="OrdersSOAPFoo", serviceName="OrdersFooBaz", endpointInterface="service.orders.Orders", 
+targetNamespace="http://www.foos.com/service/Orders/")
 public class DefaultOrdersEndpoint implements Orders {
-
+	
 	@Override
 	public OrderInquiryResponseType processOrderPlacement(OrderInquiryType orderInquiry) {
 		ObjectFactory objectFactory = new ObjectFactory();
