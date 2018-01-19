@@ -13,7 +13,7 @@
 				schemaLocation="../xsd/Order.xsd"></xsd:import>
 		</xsd:schema>
 	</wsdl:types>
-	<!-- Messages corresponds to the operations in portType -->
+	<!-- Messages corresponds to the operations (or messages?) in portType -->
 	<wsdl:message name="ProcessOrderPlacementRequest">
 		<!-- The element value refers to an element in the schema above -->
 		<wsdl:part element="order:orderInquiry" name="orderInquiry" />
